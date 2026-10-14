@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>اختبار سريع</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+      padding-top: 50px;
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    input {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>📝 اختبار سريع</h2>
+
+  <p>كم تساوي 2 + 2؟</p>
+
+  <input id="answer" type="number">
+
+  <br><br>
+
+  <button onclick="finish()">إرسال</button>
+
+  <script>
+    function finish() {
+      document.body.innerHTML = `
+        <h1>😂 تم مقلبتك!</h1>
+        <p>كان مجرد مقلب 😭</p>
+      `;
+    }
+  </script>
+
+</body>
+</html>
